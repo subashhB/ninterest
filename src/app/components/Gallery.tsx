@@ -1,8 +1,7 @@
-import React from "react";
-import type { ImageResult } from "@/models/Images";
 import fetchImages from "@/lib/fetchImages";
-import ImgContainer from "./ImgContainer";
 import addBlurredDataUrl from "@/lib/getBase64";
+import type { ImageResult } from "@/models/Images";
+import ImgContainer from "./ImgContainer";
 
 const Gallery = async () => {
     const url = "https://api.pexels.com/v1/curated";

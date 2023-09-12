@@ -1,6 +1,5 @@
 import { Photo } from "@/models/Images";
 import Image from "next/image";
-import React from "react";
 
 interface ImgContainerProps {
     photo: Photo;
