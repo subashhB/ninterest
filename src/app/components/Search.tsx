@@ -8,7 +8,7 @@ const Search = () => {
     const router = useRouter();
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        router.push(`/results/${search}`);
+        if (search) router.push(`/results/${search}`);
         setSearch("");
     };
     return (
